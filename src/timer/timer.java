@@ -35,10 +35,6 @@ public class timer {
         }, today.getTime(), 24 * 60 * 60 * 1000); // Repeat every day
 
     }
-    //test
-    public static void main(String[] args) {
-        timer_backup();
-
-    }
+    
 }
 
