@@ -1,4 +1,4 @@
-# EasiTimerBackup
+# EasiTimerBackupReforged
 
 ### A lightweight and simple timed backup program
 
@@ -11,8 +11,6 @@
 - Customizable backup destination folder
 
 - Schedule backups at regular intervals
-
-- Simple and user-friendly interface
 
   
 
