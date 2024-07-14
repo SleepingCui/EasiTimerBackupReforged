@@ -52,7 +52,35 @@ public class pack {
             }
         }
     }
+    private static void removeTemp(String path) {
+        File directory = new File(path);
 
+        if (directory.exists()) {
+            File[] files = directory.listFiles();
+
+            for (File file : files) {
+                delete(file);
+            }
+
+            directory.delete();
+
+            System.out.println("All files and directories in " + path + " have been deleted.");
+        } else {
+            System.out.println("The directory does not exist.");
+        }
+    }
+
+    private static void delete(File file) {
+        if (file.isDirectory()) {
+            File[] files = file.listFiles();
+
+            for (File f : files) {
+                delete(f);
+            }
+        }
+
+        file.delete();
+    }
     private static void Pack(File SourceDirectory,File TempDirectory,File ZipDirectory) throws FileNotFoundException {
 
         CopyFiles(SourceDirectory, TempDirectory);
@@ -73,7 +101,7 @@ public class pack {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+        removeTemp(TempDirectory.toString());
         System.out.println("INFO Backup completed: " + zipFilePath);
     }
     public static void PackBackup(String sourceDir,String TempDirectory,String ZipDirectory) throws FileNotFoundException {

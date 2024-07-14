@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EasiTimerBackupReforged:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EasiTimerBackupReforged_jar</output-path>
+    <root id="archive" name="EasiTimerBackupReforged.jar">
+      <element id="module-output" name="EasiTimerBackupReforged" />
+    </root>
+  </artifact>
+</component>
