@@ -1,6 +1,6 @@
 # EasiTimerBackupReforged
 
-### EasiTimerBackup的重制版，一个轻便简单的定时备份程序
+### EasyTimerBackup的重制版，一个轻便简单的定时备份程序
 
 [English](https://github.com/SleepingCui/EasiTimerBackupReforged/blob/master/README.md)
 
