@@ -64,9 +64,9 @@ public class pack {
 
             directory.delete();
 
-            System.out.println("All files and directories in " + path + " have been deleted.");
+            System.out.println("INFO All files and directories in " + path + " have been deleted.");
         } else {
-            System.out.println("The directory does not exist.");
+            System.out.println("ERROR The directory does not exist.");
         }
     }
 

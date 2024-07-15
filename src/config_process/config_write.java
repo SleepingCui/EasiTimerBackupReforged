@@ -27,9 +27,9 @@ public class config_write {
                 45     --分 Minutes
                 14     --秒 Seconds
                 -------Config-------
-                11
-                11
-                11
+                
+                
+                
                 --------------------
                                 
                 目录设置(源目录/临时目录/备份目录)一个路径一行
@@ -58,7 +58,8 @@ public class config_write {
     public static void IsFileEsixt(){
         File config_file = new File("config.cfg");
         if (!config_file.exists()){
-            System.out.println("配置文件不存在！正在创建...");
+
+            System.out.println("Generating configuration file...");
             WritCfg();
             System.exit(0);
         }

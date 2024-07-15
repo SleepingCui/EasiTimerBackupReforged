@@ -20,15 +20,10 @@ public class _interface{
                 """);
         System.out.println("\n============= v0.0.1 Build by SleepingCui ============\n   github.com/SleepingCui/EasiTimerBackupReforged\n");
     }
-    private static void console(){ //命令行
-        timer.timer_backup();
-    }
-
 
     public static void _interface(){
         _interface.logo();
-        _interface.console();
-
+        timer.timer_backup();
     }
 }
 
